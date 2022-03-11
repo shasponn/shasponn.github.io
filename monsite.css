@@ -1,0 +1,436 @@
+/*---------- RESET ------------*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, main, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+
+
+/*SITE*/
+
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('font/opensans-light-webfont.woff2') format('woff2'),
+         url('font/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'heeboregular';
+    src: url('font/heebo-regular-webfont.woff2') format('woff2'),
+         url('font/heebo-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'josefin_sansregular';
+    src: url('font/josefinsans-regular-webfont.woff2') format('woff2'),
+         url('font/josefinsans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+
+img
+{
+	width: 100%;
+}
+
+h1 { font-size: 130px; color: white ; font-family:'heeboregular'; font-weight: bold;}
+
+
+
+#welcome .parent_bloc .texte_welcome h2 { font-size: 30px; color: white; font-family: 'open_sanslight' }
+
+h3 { padding-top: 30px; font-size: 30px; color: #374C9F; letter-spacing: 1.2px; font-weight: bolder; margin: 10px; font-family: 'josefin_sansregular'; }
+
+section h2 { font-size: 40px; color: #374C9F; letter-spacing: 1.2px; font-weight: bolder; margin: 10px; font-family: 'open_sanslight'; }
+
+p { letter-spacing: 0.5px; font-size: 18px; font-family: 'open_sanslight';}
+
+footer #textfooter h2
+{ font-size: 60px; color: white; letter-spacing: 1.2px; font-weight: bolder; margin: 10px; font-family: 'open_sanslight';  }
+
+a:hover
+
+{
+	color:blue;
+}
+
+/*HEADER ---------------------------------------------------------*/
+
+
+#nav_h figure
+{
+	width: 110px;
+	padding: 10px;
+}
+
+#nav_h
+{display:flex;
+position: fixed;
+z-index: 100;
+padding: 10px;
+font-family: 'josefin_sansregular';
+justify-content: space-between;
+    align-items: center;
+}
+
+
+
+li {
+    display: inline;
+    padding: 0px 28px;
+    font-size: 1.3rem;
+}
+
+.nav_h {
+    color: white;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+.BgColour {
+    color: white;
+    transition: all 0.5s;
+    background-color: #374C9F;
+}
+/*welcome---------------------------------------------------------*/
+
+#welcome
+{
+	margin: 0 auto;
+	width: auto;
+}
+
+#welcome .parent_bloc
+{
+	position: relative;
+}
+
+#welcome .parent_bloc .texte_welcome
+{
+	position: absolute;
+	text-align: center; 
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 text-align: center;
+
+}
+
+
+button
+{
+	padding: 15px 50px;
+	margin: 15px;
+	text-decoration: none;
+	background-color: white;
+}
+
+/*carrosel---------------------------------------*/
+
+#carouselExemple {
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+/*----------------------premiere section--------------------------*/
+
+#section1
+{
+	display: flex;
+	justify-content: center;
+}
+
+.bloc_1
+{
+	margin: 100px 80px;
+	text-align: center;
+}
+
+
+#section1 img
+{
+	width: 70px;
+}
+
+
+/* section 2 -----------------------------------------------------------*/
+/* la position relative est pour le parent bloc, l'enfant a position relative*/
+
+
+
+#section2 
+{
+	align-items: center;
+	text-align: center;
+}
+
+
+.bloc_2img
+{
+	display: flex;
+	justify-content: center;
+}
+
+.bloc_2
+{
+	position: relative;
+}
+
+.bloc_2 img
+{
+	width: 400px;
+	padding: 15px;
+}
+
+.overlay {
+	position: absolute;
+	 transition: .5s ease;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 text-align: center;
+}
+
+.text {
+	position: relative;
+  	background-color: white;
+  	opacity: 0; 
+  	transition: .5s ease;
+  	padding: 110px 100px;
+
+}
+
+.bloc_2:hover .text {
+  opacity: 1;
+} 
+
+
+
+/* section 3 ------------------------------------------------------------------------*/
+
+.img-s3
+{
+	padding: 80px 0px;
+}
+
+.produit-s3
+{
+	display: flex;
+	justify-content: center;
+}
+
+.produit
+{
+	text-align: center;
+	padding: 15px;
+}
+
+/*formulaire--------------------------------------------------------------------*/
+
+.contact_bloc 
+{
+	display: flex;
+	padding: 100px 180px;
+	justify-content: space-between;
+}
+
+.contact_text
+{
+width: 45%;
+}
+
+.contact_text p 
+{
+	margin: 20px 0px ;
+}
+
+.contact_bloc form   
+{
+	width: 600px;
+	font-family: 'open_sanslight';
+
+}
+
+.contact_bloc form input
+{
+	padding: 20px;
+	width: 253px;
+	font-family: 'open_sanslight';
+	border-color: #EDBEB7;
+	text-decoration: none;
+}
+
+
+.contact_bloc form textarea
+{
+	margin: 20px 0px;
+	display: block;
+	padding: 20px;
+	width: 558px;
+	height: 259px;
+	resize: none;
+	font-family: 'open_sanslight';
+	border-color: #EDBEB7;
+}
+
+
+
+
+.contact_bloc form button
+{
+	margin: 20px 0px;
+	background-color: #374C9F;
+	border: none;
+	color: white;
+}
+
+/*------------------------------------------------PAGE PARALAXE---------------------*/
+
+
+.paral
+{
+	position: relative;
+}
+
+.paral h1
+{
+	position: absolute;
+	z-index: 1;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 text-align: center;
+	font-size: 100px; 
+	color: white ; 
+	font-family:'heeboregular'; 
+	font-weight: bold;
+
+}
+.contrainer_paral
+{
+	max-height: 960px;
+	margin: 0 auto;
+	font-size: 25px;
+	padding: 25px;
+}
+
+
+
+.parallax
+{
+	min-height: 500px;
+	background: transparent;
+	padding: 110px;
+	margin: 0px 0px 150px 0px;
+}
+
+.article
+{
+	display: flex;
+	margin: 60px;
+
+}
+
+.article img
+{
+	width: 500px;
+	margin-right: 130px;
+}
+
+.article_texte button 
+{
+	background-color: #374C9F;
+	color: white;
+	padding: 10px 50px;
+	text-decoration: none;
+	border: none;
+
+}
+
+.article2
+{
+	display: flex;
+	margin: 60px;
+	flex-direction: row-reverse
+
+}
+
+.article2 img
+{
+	width: 500px;
+	margin-left: 130px;
+}
+
+.article_texte2 button 
+{
+	background-color: #374C9F;
+	color: white;
+	padding: 10px 50px;
+	text-decoration: none;
+	border: none;
+
+}
+
+/*footer--------------------------------------------------------------------*/
+
+footer
+{
+	background-color: #374C9F;
+	padding: 100px 0px;
+	color: white;
+
+}
+
+
+#blockf
+{
+	width: 20px;
+	width: 1200px;
+}
+
+.f 
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+.logofooter img
+{width: 20px;
+margin: 10px;}
+
+.logofooter
+{position: flex;}
+
+span h2
+
+{
+	font-size: 30px; color: white; letter-spacing: 1.2px; font-weight: bolder; margin: 10px; font-family: 'open_sanslight';
+}
